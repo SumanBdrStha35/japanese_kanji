@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jap_n5_learn/screens/main_navigation_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:jap_n5_learn/config/theme.dart';
 import 'package:jap_n5_learn/config/constants.dart';
@@ -45,7 +46,8 @@ class MyApp extends StatelessWidget {
           themeMode: themeProvider.isDarkMode
               ? ThemeMode.dark
               : ThemeMode.light,
-          home: const SplashScreen(), // home: const MainNavigationScreen(),
+          // home: const SplashScreen(), 
+          home: const MainNavigationScreen(),
         );
       },
     );
